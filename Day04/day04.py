@@ -106,4 +106,65 @@ print(cod_ex.startswith('Coding'))
 print(cod_ex.endswith('coding'))
 
 
+'''
+Q:'   Coding For All      '  , remove the left and right trailing spaces in the given string.
+-   Which one of the following variables return True when we use the method isidentifier():
+    -   30DaysOfPython
+    -   thirty_days_of_python
+-   The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+'''
 
+sen_ex = '   Coding For All      '
+print(sen_ex.strip())
+
+con_ex0 = '30DaysOfPython'
+con_ex = 'thirty_days_of_python'
+print(con_ex0.isidentifier())
+print(con_ex.isidentifier())
+
+li_ex = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+li_ex = '# '.join(li_ex)
+print(li_ex)
+
+
+'''
+Q:-Use the new line escape sequence to separate the following sentences.
+I am enjoying this challenge.
+I just wonder what is next.
+'''
+print('I\nam\nenjoying\nthis\nchallenge.')
+print('I\njust\nwonder\nwhat\nis\nnext.')
+
+'''
+Q:Use a tab escape sequence to write the following lines.
+Name      Age     Country   City
+Asabeneh  250     Finland   Helsinki
+'''
+print('Name\t\tAge\tCountry\tCity')
+print('Asabeneh\t250\tFinland\tHelsinki')
+
+
+'''
+Q:Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+The area of a circle with radius 10 is 314 meters square.
+'''
+radius  = 10
+area = 3.14 * radius ** 2
+print(f'The area of of a circle with radius {radius} is {area} meter square ')
+
+
+'''
+Q:Make the following using string formatting methods:
+8 + 6 = 14
+8 - 6 = 2
+8 * 6 = 48
+8 / 6 = 1.33
+8 % 6 = 2
+8 // 6 = 1
+8 ** 6 = 262144
+'''
+a = 8
+b = 6
+print(f'{a} + {b} ={a+b}\n{a} - {b} ={a-b}\n{a} * {b} ={a*b}\n{a} / {b} ={a/b:2f}\n{a} % {b} ={a%b}\n{a} // {b} = {a//b}\n{a} ** {b} = {a**b}')
